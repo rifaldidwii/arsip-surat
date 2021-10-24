@@ -15,8 +15,7 @@ class SuratController extends Controller
 
         if ($request->has('keyword')) {
             $surat = Surat::with('kategori')
-                ->where('nomor_surat', 'LIKE', "%$request->keyword%")
-                ->orWhere('judul', 'LIKE', "%$request->keyword%")->get();
+                ->Where('judul', 'LIKE', "%$request->keyword%")->get();
         }
 
         return view('surat.index', compact('surat'));
@@ -32,7 +31,7 @@ class SuratController extends Controller
     public function store(CreateSuratRequest $request)
     {
         $file_surat = time() . rand(1, 1000) . '.pdf';
-        $request->file_surat->move(public_path('/file'), $file_surat);
+        $request->file_surat->move(public_path('file\\'), $file_surat);
 
         Surat::create([
             'nomor_surat' => $request->nomor_surat,
