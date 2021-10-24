@@ -15,6 +15,7 @@
 
     <a href="{{ route('surat.index') }}" class="btn btn-primary mb-2"><< Kembali</a>
     <a href="{{ asset('file') . '/' . $surat->file_surat }}" class="btn btn-primary mb-2">Unduh</a>
+    <a href="{{ route('surat.edit', $surat->id) }}" class="btn btn-primary mb-2">Edit/Ganti File</a>
 
 </div>
 @endsection
