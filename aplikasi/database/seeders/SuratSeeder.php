@@ -18,14 +18,14 @@ class SuratSeeder extends Seeder
             [
                 'nomor_surat' => '2020/PD3/TU/001',
                 'id_kategori' => 2,
-                'judul' => 'Undangan Rapat',
+                'judul' => 'Pengumuman Rapat',
                 'file_surat' => '21-60-1-10-20180905.pdf',
                 'created_at' => now(),
             ],
             [
                 'nomor_surat' => '2020/PD1/TU/022',
                 'id_kategori' => 1,
-                'judul' => 'Pengumuman Wisuda',
+                'judul' => 'Undangan Wisuda',
                 'file_surat' => '89-386-1-PB.pdf',
                 'created_at' => now(),
             ],

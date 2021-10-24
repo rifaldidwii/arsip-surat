@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Oct 24, 2021 at 06:51 AM
+-- Generation Time: Oct 24, 2021 at 10:16 AM
 -- Server version: 8.0.26
 -- PHP Version: 8.0.11
 
@@ -39,10 +39,10 @@ CREATE TABLE `kategori` (
 --
 
 INSERT INTO `kategori` (`id`, `nama`, `created_at`, `updated_at`) VALUES
-(1, 'Undangan', '2021-10-23 23:51:41', NULL),
-(2, 'Pengumuman', '2021-10-23 23:51:41', NULL),
-(3, 'Nota Dinas', '2021-10-23 23:51:41', NULL),
-(4, 'Pemberitahuan', '2021-10-23 23:51:41', NULL);
+(1, 'Undangan', '2021-10-24 03:16:23', NULL),
+(2, 'Pengumuman', '2021-10-24 03:16:23', NULL),
+(3, 'Nota Dinas', '2021-10-24 03:16:23', NULL),
+(4, 'Pemberitahuan', '2021-10-24 03:16:23', NULL);
 
 -- --------------------------------------------------------
 
@@ -85,9 +85,9 @@ CREATE TABLE `surat` (
 --
 
 INSERT INTO `surat` (`id`, `nomor_surat`, `id_kategori`, `judul`, `file_surat`, `created_at`, `updated_at`) VALUES
-(1, '2020/PD3/TU/001', 2, 'Undangan Rapat', '21-60-1-10-20180905.pdf', '2021-10-23 23:51:41', NULL),
-(2, '2020/PD1/TU/022', 1, 'Pengumuman Wisuda', '89-386-1-PB.pdf', '2021-10-23 23:51:41', NULL),
-(3, '2020/PD1/TU/014', 3, 'Nota Dinas WFH', '199-194-1-PB.pdf', '2021-10-23 23:51:41', NULL);
+(1, '2020/PD3/TU/001', 2, 'Pengumuman Rapat', '21-60-1-10-20180905.pdf', '2021-10-24 03:16:23', NULL),
+(2, '2020/PD1/TU/022', 1, 'Undangan Wisuda', '89-386-1-PB.pdf', '2021-10-24 03:16:23', NULL),
+(3, '2020/PD1/TU/014', 3, 'Nota Dinas WFH', '199-194-1-PB.pdf', '2021-10-24 03:16:23', NULL);
 
 --
 -- Indexes for dumped tables
